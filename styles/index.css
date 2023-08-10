@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font);
+  --font: 'arial';
+
+  --text: #0a1b1e;
+  --background: #ffffff;
+  --primary: #401d54;
+  --secondary: #e8c1bb;
+  --accent: #5ba037;
+
+  box-sizing: border-box;
+
+  /*  --text: rgb(10, 27, 30);
+  --background: rgb(255, 255, 255);
+  --primary: rgb(64, 29, 84);
+  --secondary: rgb(232, 193, 187);
+  --accent: rgb(91, 160, 55); */
+}
+
+body {
+  background-color: var(--background);
+}
+
+.odd-even {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  justify-content: center;
+}
+
+.odd-even-header-container {
+  margin: 150px 0 50px 0;
+  width: 100%;
+}
+.odd-even-header-container h2 {
+  text-align: center;
+  font-size: 4em;
+  color: var(--primary);
+}
+
+.odd-even-header-container p {
+  text-align: center;
+  font-size: 1em;
+  color: var(--text);
+}
+
+.odd-even-description-container {
+  width: 550px;
+  margin: 0 auto;
+}
+
+.odd-even-description-container p {
+  font-size: 1em;
+}
+
+.inputs,
+.odd-even-btn-container {
+  display: grid;
+  place-content: center;
+}
+
+input {
+  width: 800px;
+  height: 50px;
+  border-radius: 15px;
+  padding-left: 15px;
+}
+
+button {
+  width: 800px;
+  height: 40px;
+  margin: 0 auto;
+  border: none;
+  background-color: var(--primary);
+  color: var(--background);
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.result {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: var(--secondary);
+  bottom: 0;
+  position: absolute;
+}
+
+.footer-container {
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.footer-container a {
+  margin: 0 auto;
+  text-decoration: none;
+  color: var(--text);
+}
